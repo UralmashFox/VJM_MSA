@@ -6,7 +6,6 @@ The goal of this work was creating of Virtual Joint Modeling (VJM) and Matrix st
 - [x] Create deflection maps for 100N force in X, Y, Z directions
 - [x] Compare VJM and MSA results
 
-[Here is my git repo for this task.](https://github.com/UralmashFox/VJM_MSA)
 ## VJM:
 Firstly was solved inverse kinematics by atan2 function. Were found all the rotation angles per each joint. Assuming, that translational joints move the same as end-effector: each axis depends on one of the coordinate of the platform. Platform is a point.
 Based on the inverse kinematics we can obtain:

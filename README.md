@@ -6,13 +6,12 @@ The goal of this work was creating of Virtual Joint Modeling (VJM) and Matrix st
 - [x] Create deflection maps for 100N force in X, Y, Z directions
 - [x] Compare VJM and MSA results
 
+[Here is my git repo for this task.](https://github.com/UralmashFox/VJM_MSA)
 ## VJM:
 Firstly was solved inverse kinematics by atan2 function. Were found all the rotation angles per each joint. Assuming, that translational joints move the same as end-effector: each axis depends on one of the coordinate of the platform. Platform is a point.
 Based on the inverse kinematics we can obtain:
 ![](https://i.imgur.com/kMGF7se.jpg)
-
 this is for 1st (primary) configuration, when end-effector is in (1,1,1) position.
-
 For full positions, described in work:
 ![](https://i.imgur.com/XcJtXpz.jpg)
 Please, pay attention: red lines - link from base to middle joint. Green lines - link from middle joint to the end-effector. Yellow - second link over first.
@@ -49,6 +48,12 @@ F = [100 100 100 0 0 0]'
 ![](https://i.imgur.com/X6W6i6u.jpg)
 ![](https://i.imgur.com/BLKu2Id.jpg)
 ![](https://i.imgur.com/uxEM7KO.jpg)
+![](https://i.imgur.com/zYZTlRL.jpg)
+![](https://i.imgur.com/RbXnplO.jpg)
+![](https://i.imgur.com/uG4Jjwe.jpg)
+![](https://i.imgur.com/5GJEWZb.jpg)
+![](https://i.imgur.com/AcANIYq.jpg)
+
 
 ## MSA:
 
@@ -70,6 +75,9 @@ Plots:
 ![](https://i.imgur.com/dUB9HZJ.jpg)
 ![](https://i.imgur.com/cCdlJ5d.jpg)
 ![](https://i.imgur.com/MuzFaeE.jpg)
+![](https://i.imgur.com/0vdj83N.jpg)
+
+
 ## Comparision
 If to compare VJM with MSA results, it may be said that ~~I didn't understand the MSA topic~~ MSA doesn't do it's work well, because of really high numbers of deflection. VJM shows much better results. Moreover, they're much more realistic, because it may be detected the peak of deflection (about 0.100000012 in the point (10,10,10)). That shows, that in the farthest distance the deflection is bigger, what is obviouse.
 ## VJM model

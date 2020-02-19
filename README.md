@@ -11,6 +11,7 @@ The goal of this work was creating of Virtual Joint Modeling (VJM) and Matrix st
 Firstly was solved inverse kinematics by atan2 function. Were found all the rotation angles per each joint. Assuming, that translational joints move the same as end-effector: each axis depends on one of the coordinate of the platform. Platform is a point.
 Based on the inverse kinematics we can obtain:
 ![](https://i.imgur.com/kMGF7se.jpg)
+
 this is for 1st (primary) configuration, when end-effector is in (1,1,1) position.
 For full positions, described in work:
 ![](https://i.imgur.com/XcJtXpz.jpg)

@@ -2,6 +2,7 @@
 - [x] Generate experimental data for 30 experiments.
 - [x] Identify compliance parameters of joints for experimental data and compare results with the original one.
 - [x] Implement error compensation technique, compare efficiency of calibrated and non-calibrated robots. 
+
 [there is a link to this task](https://github.com/UralmashFox/VJM_MSA/tree/calibration)
 ## Tables with estimated and real parameters
 All the "_prime" characteristics are what was BEFORE calibration.
@@ -210,5 +211,6 @@ Figures with trajectories before and after calibration
 (blue - before, red - after)
 The fourth configuration:
 ![](https://i.imgur.com/HZHkt3X.jpg)
+
 The fourteens configuration:
 ![](https://i.imgur.com/9Xi16XU.jpg)

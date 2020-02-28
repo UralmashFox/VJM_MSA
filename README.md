@@ -2,7 +2,9 @@
 - [x] Generate experimental data for 30 experiments.
 - [x] Identify compliance parameters of joints for experimental data and compare results with the original one.
 - [x] Implement error compensation technique, compare efficiency of calibrated and non-calibrated robots. 
+
 [there is a link to this task](https://github.com/UralmashFox/VJM_MSA/tree/calibration)
+
 ## Tables with estimated and real parameters
 All the "_prime" characteristics are what was BEFORE calibration.
 All the "_final" characteristics are what is AFTER calibration.
@@ -208,10 +210,15 @@ X|Y  |         Z        |Roll|Pitch|Yaw|
 
 Figures with trajectories before and after calibration
 (blue - before, red - after)
+
 The fourth configuration:
+
 ![](https://i.imgur.com/HZHkt3X.jpg)
+
 The fourteens configuration:
+
 ![](https://i.imgur.com/9Xi16XU.jpg)
+
 ## Conclusion
 As can be seen, the characteristics that had to be changed due to callibraration were recalculated correctly. For example, for the first joint only Z displacement was shifted (as it changes only Z coordinate), for the second joint Y and angle around z-axis was changes (as is changes angle and shifts from previous joints are considered), and for the last joint the X coordinate is changed (as far as it moves along that axis due to transformations). In the end, however I obtained correctly only last joint stiffness well, which is equal to 0.5. Two other stiffnesses are changes from iteration to iteration from 0.9 to 1.4 for the first joint and from 1.5 to 4 for the second. It seems like there is a mistake in formulas or calculation unsertaintes.
 The program honestly was created from the scratch by myself not using an example (the same as previous task).
